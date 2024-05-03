@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		About Us || website
+	</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+<!-- ---------------------------------- bootswtrap link ----------------------- -->
+		  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+
+<header>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Rupdershani Alankar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="file:///C:/Users/User/Desktop/Bootstrap%20Programs/Website/website.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/User/Desktop/Bootstrap%20Programs/Website/aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/User/Desktop/Bootstrap%20Programs/Website/contactUs.html">Contact Us</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link">
+           <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Log In
+          </button></a>
+        </li>
+      </ul>
+    
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--  -------------------------- model ----------------------------------- -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class=" row modal-body">
+        <div class="firstName form-group col-12">
+          <label>E-Mail</label>
+          <input type="E-mail" class="form-control" name="name" placeholder=" abc@gmail.com">
+        </div>  
+          <div class="firstName form-group col-12">
+          <label>Password</label>
+          <input type="Password" class="form-control"  name="name" placeholder="Enter Password">
+        </div>
+      </div>
+      <div class="modal-footer alert alert-dark" role="alert">
+
+        <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary alert-link" id="liveAlertBtn" >Submit</button>
+         <div style=" position: absolute; left: 5px; " id="liveAlertPlaceholder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+const myTimeout = setTimeout(addEventListener ,5000);
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Submitted successfully!', 'success')
+  })
+}
+</script>
+
+</header>
+
+<!-- -------------------------- header end ----------------------- -->
+<!-- -------------------------- body start ----------------------- -->
+
+<section style=" height: 400px;">
+<div >
+	<img src="https://www.jewelryediting.com/wp-content/uploads/2022/09/About-us-1-1536x400.png" width="100%" height="400px" class="col-12" style="box-sizing: border-box; " alt="...">
+</div>
+
+</section>
+
+
+
+
+<section>
+	<div class="row justify-content-around"  style=" margin: auto; width: 200px; height: 200px;">
+      <img src="https://www.jewelryediting.com/wp-content/uploads/2022/09/2237677.png" width=" 50%" class="col-12" >
+    </div>
+
+</section>
+
+
+<div class="elementor-widget-container row justify-content-center" style=" text-align: center;">
+	<h3 class="elementor-heading-title elementor-size-default col">ABOUT US</h3>		</div>
+
+
+	<div class="elementor-widget-container" style=" text-align: center;">
+			<h2 class="elementor-heading-title elementor-size-default">Rupdershani Alankar redefines the visuals of jewelleries !</h2>		
+
+	</div>
+
+<div class="row" style=" text-align: center;">
+<p>
+	It’s the digital age we are living in! Thus, online shopping has created buzz across the world! As the statement defines “First impression does lasts lifelong”, it is essential for every brand, dealing with the virtual world, to adopt technical enhancement techniques in order to make their presentation spectacular. If you are running an online Jewelry store but are disgraced for inappreciable returns then <b>Rupdershani Alankar</b> is here to rescue you!
+</p>
+
+</div>
+
+
+
+
+<div class="row justify-content-center " style="box-shadow: 0 0 10px 2px #000; width: 80%; 
+    margin: auto; 
+    padding: 20px;
+
+
+
+">
+
+	<div class="col-sm-12 col-md-12 col-lg-5" style=" height: 400px;">
+		<img src="https://rubans.in/cdn/shop/products/rubans-rose-gold-plated-appealing-cz-studded-contemporary-necklace-set-necklace-set-33605277450414.jpg?v=1684141122 " width="100%" height="100%">
+    
+	</div>
+
+
+
+
+	<div class="col-sm-12 col-md-12 col-lg-5" style=" ">
+		<div class="accordion" id="accordionExample" style="  margin-top: 20px;" >
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      	<b>What is the need of Jewelry editing services?</b>
+       </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+    Rupdershani Alankar Servicesoffers Jewelry Image Editing or Jewelry Retouching services. Jewelry editing services refer to the sophisticated modification of Jewelry photos, making use of image editing software that enhances the image quality which in result triggers the emotion of viewers! At Jewelry Editing Services we offer proficient Jewelry Photo Editing Services that make the Jewelry image alluring with colors and light of the image perfectly balanced.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <b>Why to trust us for the best results?</b> 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Our tech-savvy editors are highly creative and experienced in Jewelry Image Editing. The editors use updated software for retouching the Jewelry images in order to attain the pitch perfect Jewelry images. The output images after editing are breathtaking! The team of dedicated editors follow proven process of Jewelry Image Editing and invest ample of time for ensuring the results to overcome the requirements of the clients.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+     <b>  We help your online store to look fashionable! </b>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        It’s a fact, around 75% of online Jewelry sales reduce for poor Jewelry editing! Our team of experienced editors are aware, how necessary is perfect image retouching services for Jewelry. We deploy high efforts to make the online Jewelry store look fashionable with the distinguished and appealing images of jewelry.  It is quite simple to avail our services! Click the photos of the jewelry with standard quality and send those to us right away! Place an order for image editing and upload the images. 
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<section>
+	
+<div class="row justify-content-center" style="width: 100%; text-align: center; margin-left: 10px;
+    margin-right: 10px;
+">
+	<h1>WHY CHOOSE US?</h1>
+	<p>Our experts are tech enthusiasm and always associate with new technology. They can help your business by providing excellent Jewelry Photo Editing services. We love to work with more precise and transparency so that our service never put any bad effect on your business. Client’s satisfaction is one thing which we always focus.</p>
+	
+</div>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------- footer ---------------------------- -->
+
+
+<!-- ---------------------------  footer start ------------------------ -->
+
+<footer>
+  <section class=" container-fluid row justify-content-around">
+
+    <div class="aboutContent col-sm-12 col-md-5 col-lg-4">
+      <img src="">
+         <p>The <b style=" color: skyblue;">Rupdershani Alankar</b> is building the foundation of    all learners. We are providing a platform where all age groups are welcome to enhance their skills. <br>
+
+         "Since education is the answer to all the questions we are doing our best to incorporate them all".</p>   
+    </div>
+    <div class="aboutContent col-sm-12 col-md-5 col-lg-2">
+        <h1 >SUPPORT</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Poduct</a></li>
+                <li><a href="#">ContactUs</a></li>
+                <!-- <li><a href="#">Enroll now</a></li> -->
+                <li><a href="#">LogIn</a></li>
+            </ul>
+    </div>
+    <div class="aboutContent col-sm-12 col-md-5 col-lg-3">
+        <h1>Useful Links</h1>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">carier</a></li>
+                <li><a href="#"> Become An Instructor</a></li>
+            </ul>
+    </div>
+    <div class="aboutContent col-sm-12 col-md-5 col-lg-2">
+       <h1>Policy</h1>
+            <ul>
+                <li><a href="#">Refund policy</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#"> Disclaimer</a></li>
+                <li><a href="#"> privacy Policy</a></li>
+            </ul>
+    </div>
+    
+
+
+
+  </section>
+
+  <section class="contener icon  col-12 ">
+     <div class="icon-item col-12 ">
+        <i class="fa fa-facebook icons" style="background: blue;"> </i>
+
+
+   <i class="fa  fa-linkedin icons" style=" color: blue;"> </i>
+
+          <i class="fa fa-instagram icons" style=" background: linear-gradient(  #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5 );"> </i>
+
+  <a href="https://www.youtube.com/"> <i class="fa fa-youtube-play icons" style=" color: red;"> </i></a>
+     </div>
+      <div class="copyright col-12 col-md-12 ">
+          <h3>
+              Made with &#10084 In India
+          </h3> 
+     </div>
+     <div class="copyright col-12">
+         <h3> All Rights Reserved by &#169 2024 | Rupdershani Alankar</h3>
+     </div>`
+
+
+  </section>
+
+
+
+
+</footer>
+
+<!-- -----------------------  bootstrap js link ------------------- -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
